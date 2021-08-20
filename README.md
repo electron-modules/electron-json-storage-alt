@@ -3,14 +3,10 @@ electron-json-storage
 
 > Easily write and read user settings in Electron apps
 
-[![electron modules][electron-modules-image]][electron-modules-url]
 [![npm version](https://badge.fury.io/js/electron-json-storage.svg)](http://badge.fury.io/js/electron-json-storage)
 [![dependencies](https://david-dm.org/jviotti/electron-json-storage.svg)](https://david-dm.org/jviotti/electron-json-storage.svg)
 [![Build Status](https://travis-ci.org/electron-userland/electron-json-storage.svg?branch=master)](https://travis-ci.org/electron-userland/electron-json-storage)
 [![Build status](https://ci.appveyor.com/api/projects/status/ulwk1nnh7l8209xg/branch/master?svg=true)](https://ci.appveyor.com/project/electron-userland/electron-json-storage/branch/master)
-
-[electron-modules-image]: https://img.shields.io/badge/electron-modules-blue.svg
-[electron-modules-url]: https://github.com/xudafeng/electron-modules
 
 [Electron](http://electron.atom.io) lacks an easy way to persist and read user settings for your application. `electron-json-storage` implements an API somehow similar to [localStorage](https://developer.mozilla.org/en/docs/Web/API/Window/localStorage) to write and read JSON objects to/from the operating system application data directory, as defined by `app.getPath('userData')`.
 
