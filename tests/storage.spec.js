@@ -36,7 +36,7 @@ const mkdirp = require('mkdirp');
 const chai = require('chai');
 const storage = require('../lib/storage');
 const utils = require('../lib/utils');
-const app = electron.app || electron.remote.app;
+const app = electron.app;
 
 describe('Electron JSON Storage', function() {
 

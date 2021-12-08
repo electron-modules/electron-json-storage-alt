@@ -29,7 +29,7 @@ const path = require('path');
 const utils = require('../lib/utils');
 const electron = require('electron');
 const os = require('os');
-const app = electron.app || electron.remote.app;
+const app = electron.app;
 
 describe('Utils', function() {
 

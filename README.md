@@ -25,7 +25,40 @@ Install `electron-json-storage` by running:
 $ npm install --save electron-json-storage
 ```
 
-You can require this module from either the **main** or **renderer** process (with and without `remote`).
+You can require this module from only the **main** process (`remote` module is deprecated after Electron 12).
+
+Use in renderer process
+------------
+
+set `preload.js` as preload file of `BrowserWindow`/`webview`
+
+```js
+'use strict';
+
+const storage = require('electron-json-storage-alt');
+const { promisify } = require('util');
+const { ipcRenderer, contextBridge } = require('electron');
+
+contextBridge.exposeInMainWorld(
+  '_electron_bridge',
+  {
+    storage: {
+      get: promisify(storage.get),
+      set: promisify(storage.set),
+    },
+  }
+);
+```
+
+get `storage` from `contextBridge`:
+
+```js
+const saveToStorage = async () => {
+  await window._electron_bridge.storage.set('test_storage_current_time', new Date());
+  const time = await window._electron_bridge.storage.get('test_storage_current_time');
+  console.log('test_storage_current_time', time);
+}
+```
 
 Documentation
 -------------
