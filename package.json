@@ -1,12 +1,12 @@
 {
   "name": "electron-json-storage-alt",
-  "version": "13.0.0",
+  "version": "17.0.0",
   "description": "Easily write and read user settings in Electron apps",
   "main": "lib/storage.js",
-  "homepage": "https://github.com/electron-userland/electron-json-storage",
+  "homepage": "https://github.com/electron-modules/electron-json-storage-alt",
   "repository": {
     "type": "git",
-    "url": "git://github.com/electron-userland/electron-json-storage.git"
+    "url": "git://github.com/electron-modules/electron-json-storage-alt.git"
   },
   "directories": {
     "test": "tests"
@@ -29,7 +29,7 @@
   "devDependencies": {
     "@electron/remote": "^2.0.1",
     "chai": "^4.2.0",
-    "electron": "13",
+    "electron": "17",
     "electron-mocha": "^6.0.4",
     "jsdoc-to-markdown": "^2.0.1",
     "jshint": "^2.9.1",
