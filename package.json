@@ -1,6 +1,6 @@
 {
   "name": "electron-json-storage-alt",
-  "version": "17.0.0",
+  "version": "17.0.1",
   "description": "Easily write and read user settings in Electron apps",
   "main": "lib/storage.js",
   "homepage": "https://github.com/electron-modules/electron-json-storage-alt",
