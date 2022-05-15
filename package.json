@@ -1,6 +1,6 @@
 {
   "name": "electron-json-storage-alt",
-  "version": "17.0.1",
+  "version": "18.0.0",
   "description": "Easily write and read user settings in Electron apps",
   "main": "lib/storage.js",
   "homepage": "https://github.com/electron-modules/electron-json-storage-alt",
@@ -27,9 +27,8 @@
   "author": "Juan Cruz Viotti <jv@jviotti.com>",
   "license": "MIT",
   "devDependencies": {
-    "@electron/remote": "^2.0.1",
     "chai": "^4.2.0",
-    "electron": "17",
+    "electron": "18",
     "electron-mocha": "^6.0.4",
     "jsdoc-to-markdown": "^2.0.1",
     "jshint": "^2.9.1",
