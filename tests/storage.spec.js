@@ -170,7 +170,9 @@ describe('Electron JSON Storage', function() {
       });
 
       afterEach(function(done) {
-        mkdirp(storage.getDataPath(), done);
+        mkdirp(storage.getDataPath()).then(function() {
+          done();
+        }).catch(done);
       });
 
       it('should return an empty object for any key', function(done) {
@@ -456,7 +458,9 @@ describe('Electron JSON Storage', function() {
       });
 
       afterEach(function(done) {
-        mkdirp(storage.getDataPath(), done);
+        mkdirp(storage.getDataPath()).then(function() {
+          done();
+        }).catch(done);
       });
 
       it('should return an empty object', function(done) {
